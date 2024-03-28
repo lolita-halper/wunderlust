@@ -253,10 +253,10 @@
     </main>
     <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
       <h2>Contact Us</h2>
-      <label for="first-name">First Name</label>
-      <input type="text" id="first-name" name="first-name">
-      <label for="last-name">Last Name</label>
-      <input type="text" id="last-name" name="last-name">
+      <label for="first-name">First Name<span class="required">*</span></label>
+      <input type="text" id="first-name" name="first-name" required aria-required="true">
+      <label for="last-name">Last Name<span class="required">*</span></label>
+      <input type="text" id="last-name" name="last-name" required aria-required="true">
       <fieldset>
         <legend>Contact Method</legend>
         <input type="radio" id="email-method" name="email-method">
@@ -266,10 +266,10 @@
         <input type="radio" id="phone-method" name="phone-method">
         <label for="phone-method">Phone</label>
       </fieldset>
-      <label for="my-email">Email Address</label>
-      <input type="email" id="my-email" name="my-email">
-      <label for="my-phone">Phone Number</label>
-      <input type="tel" id="my-phone" name="my-phone">
+      <label for="my-email">Email Address<span class="required">*</span></label>
+      <input type="email" id="my-email" name="my-email" required aria-required="true">
+      <label for="my-phone">Phone Number<span class="required">*</span></label>
+      <input type="tel" id="my-phone" name="my-phone" required aria-required="true">
       <fieldset>
         <legend>Destination</legend>
         <input type="checkbox" id="dest-1" name="dest-1">
