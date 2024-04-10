@@ -77,4 +77,8 @@ h1 {
     font-family: var(--h1-h2-h3);
     font-weight: 400;
     font-style: italic;
+    font-size: 3.125rem;
+}
+header p {
+    font-size: 1.25rem;
 }
