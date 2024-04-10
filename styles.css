@@ -34,6 +34,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -61,7 +62,7 @@ table {
     --dk-gray: #222;
     --black:#000;
     --white: #fff;
-    --body-font: "Montserrat", Arial, sans-serif;
+    --body-font: "Montserrat", sans-serif;
     --h1-h2-h3: "Molle", cursive;
 }
 
