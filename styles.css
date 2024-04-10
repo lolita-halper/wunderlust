@@ -64,6 +64,25 @@ table {
     --body-font: "Montserrat", Arial, sans-serif;
     --h1-h2-h3: "Molle", cursive;
 }
+
+/* ---SKIP LINK STYLE--- */
+
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/*---BODY STYLES---*/
+
 body {
     font-family: var(--body-font);
     line-height: 1.5;
@@ -82,3 +101,4 @@ h1 {
 header p {
     font-size: 1.25rem;
 }
+
