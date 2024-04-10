@@ -53,7 +53,6 @@ table {
 	border-spacing: 0;
 }
 :root {
-    --box-shadow-sm: 0px 3px 7px var(--med-gray);
     --yellow: #F6D64A;
     --teal: #55BCD5;
     --purple: #9B26B0;
@@ -64,4 +63,7 @@ table {
     --white: #fff;
     --h4-p-q-small-nav-button-form-fonts: "Montserrat", Arial, sans-serif;
     --h1-h2-h3: "Molle", script;
+}
+* {
+    
 }
