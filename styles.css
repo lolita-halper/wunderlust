@@ -88,19 +88,19 @@ body {
     font-family: var(--body-font);
     line-height: 1.5;
     font-size: 1rem;
-    margin: 0 auto;
-    max-width: 429px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 Header {
-    display: grid;
     grid-template-columns: 1fr;
     background-image: linear-gradient(to bottom, rgba(85,188,213,100), rgba(255, 255, 255, 0));
     background-repeat: no-repeat;
-    background-size: auto 391px;
-}
-header img {
-    width: 143px;
-    height: auto;
+    width: calc(100%);
+    display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  align-items: center;
 }
 h1 {
     font-family: var(--h1-h2-h3);
