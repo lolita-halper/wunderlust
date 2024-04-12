@@ -90,7 +90,7 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    width:428px;
+    max-width:428px;
 }
 Header {
     background-image: linear-gradient(to bottom, rgba(85,188,213,100),rgba(255,255,255,0));
@@ -127,6 +127,9 @@ q {
     font-size: 1rem;
     font-style: italic;
 }
+
+/*---INTRO SECTION---*/
+
 #intro h2 {
     font-size: 2.5rem;
 }
@@ -136,10 +139,12 @@ q {
     padding: 0.625rem 1.75rem;
 }
 #intro img {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 10px;
+    height: 354px;
+    padding-bottom: 15px;
 }
+
+/*---PLAN SECTION---*/
+
 #plan {
     background-color: var(--yellow);
     display: grid;
@@ -157,6 +162,9 @@ q {
 #plan h4 {
 padding-bottom: 20px;
 }
+
+/*---TESTIMONIAL SECTION---*/
+
 #testimonials {
     display: grid;
     gap: 10px;
@@ -169,6 +177,9 @@ padding-bottom: 20px;
     text-align: center;
     padding-bottom: 20px;
 }
+
+/*---ABOUT SECTION---*/
+
 #about {
     background-color: var(--blue);
 }
@@ -184,6 +195,19 @@ padding-bottom: 20px;
 }
 #about h3 {
     padding-bottom: 12px;
+}
+#about section {
+    padding-bottom: 20px;
+}
+
+/*---CONTACT SECTION---*/
+
+#contact {
+
+}
+.form-required {
+    font-family: var(--body-font);
+    font-size: 1rem;
 }
 
 
