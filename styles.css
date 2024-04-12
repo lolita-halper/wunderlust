@@ -34,21 +34,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 body {
 	line-height: 1;
 }
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
+/*    blockquote, q {
+        quotes: none;
+    }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
+	content: "";
 	content: none;
-}
+}*/
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -88,29 +87,107 @@ body {
     font-family: var(--body-font);
     line-height: 1.5;
     font-size: 1rem;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    width:428px;
 }
 Header {
-    grid-template-columns: 1fr;
-    background-image: linear-gradient(to bottom, rgba(85,188,213,100), rgba(255, 255, 255, 0));
-    background-repeat: no-repeat;
+    
     width: calc(100%);
-    display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.5rem;
-  align-items: center;
+}
+h1, h2, h3 {
+    font-family: var(--h1-h2-h3);
+    padding: 1rem 1.75rem 0 1.75rem;
 }
 h1 {
-    font-family: var(--h1-h2-h3);
-    font-weight: 400;
-    font-style: italic;
     font-size: 3.125rem;
+}
+h2 {
+    font-size: 2.75rem;
+}
+h3 {
+    font-size: 2.25rem;
+}
+h4 {
+    font-family: var(--body-font);
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+q {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-style: italic;
 }
 header p {
     font-size: 1.25rem;
+    padding: 0 1.75rem;
 }
-
+#intro h2 {
+    font-size: 2.5rem;
+}
+#intro p {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    padding: 0.625rem 1.75rem;
+}
+#intro img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+#plan {
+    background-color: var(--yellow);
+    display: grid;
+}
+#plan section {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    background-color: var(--teal);  
+    border-radius: 10px;
+    border: solid #fff 3px;
+    margin: 35px;
+    padding: 35px; 
+}
+#plan h4 {
+padding-bottom: 20px;
+}
+#testimonials {
+    display: grid;
+    gap: 10px;
+    
+}
+#testimonials section {
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#about {
+    display: grid;
+    gap: 10px;
+    background-color: var(--blue);
+}
+#about section {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    border: 1px solid #ccc; 
+}
+#about h4:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#about img {
+    width: 25%;
+}
 
 
