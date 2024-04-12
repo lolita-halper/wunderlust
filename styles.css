@@ -93,8 +93,15 @@ body {
     width:428px;
 }
 Header {
-    
+    background-image: linear-gradient(to bottom, rgba(85,188,213,100),rgba(255,255,255,0));
     width: calc(100%);
+}
+header p {
+    font-size: 1.25rem;
+    padding: 0 1.75rem;
+}
+nav h2 {
+
 }
 h1, h2, h3 {
     font-family: var(--h1-h2-h3);
@@ -119,10 +126,6 @@ q {
     font-family: var(--body-font);
     font-size: 1rem;
     font-style: italic;
-}
-header p {
-    font-size: 1.25rem;
-    padding: 0 1.75rem;
 }
 #intro h2 {
     font-size: 2.5rem;
@@ -167,27 +170,23 @@ padding-bottom: 20px;
     padding-bottom: 20px;
 }
 #about {
-    display: grid;
-    gap: 10px;
     background-color: var(--blue);
 }
-#about section {
+#about div {
     display: grid;
-    grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr;
     place-items: center;
     text-align: center;
     padding-bottom: 20px;
-    border: 1px solid #ccc; 
-}
-#about h4:nth-child(1) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 #about img {
     width: 25%;
 }
+#about h3 {
+    padding-bottom: 12px;
+}
+
+
+
 
 
