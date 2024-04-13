@@ -306,3 +306,17 @@ legend {
     text-transform: uppercase;
     color: var(--white);
 }
+
+footer {
+    background-color: var(--lt-gray);
+    text-align: center;
+    line-height: 3rem;
+}
+footer a {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--dk-gray);
+}
