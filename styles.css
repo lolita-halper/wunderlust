@@ -365,6 +365,11 @@ input, fieldset, select {
 }
 fieldset{
 	margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border: 0;
 }
 fieldset label {
     display: flex;
