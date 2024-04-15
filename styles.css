@@ -83,17 +83,6 @@ table {
 
 /*---BODY STYLES---*/
 
-/*body {
-    font-family: var(--body-font);
-    line-height: 1.5;
-    font-size: 1rem;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    color: var(--dk-gray);
-    width: calc(100% - 2rem);
-    max-width: 1920px;
-}*/
 body {
     display: grid;
     grid-template-columns: 1fr;
@@ -284,6 +273,15 @@ nav ul {
 }
 
 /*---TESTIMONIAL STYLES---*/
+
+blockquote, q {
+    quotes: "";
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '\201C';
+content: '\201D';
+}
 
 #testimonials div {
     display: flex;
