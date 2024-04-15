@@ -267,9 +267,9 @@ nav ul {
     border-radius: 0.75rem;
     border: solid #fff 4px;
     margin: 0.5rem 1.75rem;
-    padding: 2rem;
+    padding: 1.5rem;
     justify-content: center;
-    height: 40vh;
+    height: 25vh;
 }
 
 /*---TESTIMONIAL STYLES---*/
@@ -349,8 +349,8 @@ input, label, fieldset {
     display: block;
 }
 input[type='radio'] {
-    height: 50px;
-    width: 50px;
+    height: 1.25rem;
+    width: 1.25rem;
     position: relative;
 }
 input, fieldset, select {
