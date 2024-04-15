@@ -244,6 +244,7 @@ nav ul {
 /*---INTRO STYLES---*/
 #img-grid {
     display: flex;
+    flex-wrap: wrap;
 }
 #intro {
     display: grid;
