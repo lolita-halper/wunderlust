@@ -83,7 +83,7 @@ table {
 
 /*---BODY STYLES---*/
 
-body {
+/*body {
     font-family: var(--body-font);
     line-height: 1.5;
     font-size: 1rem;
@@ -93,8 +93,21 @@ body {
     color: var(--dk-gray);
     width: calc(100% - 2rem);
     max-width: 1920px;
+}*/
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(429px, 1fr));
+    width: 429px;
+    color: var(--dk-gray);
+    margin: 0 auto;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    box-sizing: border-box;
 }
-
 /*---HEADING STYLES---*/
 
 h1, h2, h3 {
@@ -135,7 +148,7 @@ header img {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 100%;
+    width: 90%;
 }
 header h1 {
     grid-row-start: 2;
@@ -229,7 +242,9 @@ nav ul {
 }
 
 /*---INTRO STYLES---*/
-
+#img-grid {
+    display: flex;
+}
 #intro {
     display: grid;
     grid-template-columns: 1fr;
