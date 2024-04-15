@@ -245,6 +245,7 @@ nav ul {
 #img-grid {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 0.8rem;
 }
 /*#intro {
     display: grid;
@@ -261,8 +262,8 @@ nav ul {
 }
 #intro img {
     margin: 0 auto;
-    min-width: 466px;
-    padding: .33rem;
+    min-width: 429px;
+    /*padding: .33rem;*/
 }
 
 /*---PLAN STYLES---*/
