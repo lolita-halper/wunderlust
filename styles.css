@@ -272,22 +272,17 @@ nav ul {
     background-color: var(--yellow);
     margin-top: 1rem;
 }
-#plan div {
-    display: grid;
-    grid-template-columns:1fr;
-}
 
 #plan section {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--teal);  
-    border-radius: 10px;
-    border: solid #fff 3px;
-    height: 18rem;
-    margin: 10px 35px;
-    padding: 35px;
-    place-items: center;
-    text-align: center;
+    border-radius: 0.75rem;
+    border: solid #fff 4px;
+    margin: 0.5rem 1.75rem;
+    padding: 2rem;
+    justify-content: center;
+    height: 40vh;
 }
 
 /*---TESTIMONIAL STYLES---*/
