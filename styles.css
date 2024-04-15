@@ -66,7 +66,14 @@ table {
 }
 
 /*---SKIP LINK---*/
-
+*{
+    box-sizing: border-box;
+    line-height: 1.35;
+    
+}
+html {
+    background-color: var(--dk-gray);
+}
 #skip {
     position: absolute;
     left: -10000px;
@@ -90,6 +97,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(429px, 1fr));
     width: 429px;
     color: var(--dk-gray);
+    background-color: var(--white);
     margin: 0 auto;
     font-family: var(--body-font);
     font-size: 1rem;
