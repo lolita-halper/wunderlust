@@ -288,17 +288,15 @@ nav ul {
 
 /*---TESTIMONIAL STYLES---*/
 
-#testimonials {
-    display: grid;
-    gap: 10px;
-    
+#testimonials div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
 }
 #testimonials section {
-    display: grid;
-    grid-template-rows: auto;
-    place-items: center;
     text-align: center;
-    padding-bottom: 20px;
 }
 q {
     font-family: var(--body-font);
