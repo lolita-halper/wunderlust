@@ -241,11 +241,11 @@ nav ul {
     flex-wrap: wrap;
     row-gap: 0.8rem;
 }
-/*#intro {
+#intro {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.5rem;
-}*/
+}
 #intro h2 {
     font-size: 2.5rem;
 }
@@ -402,4 +402,3 @@ footer a {
     justify-content: center;
     color: var(--dk-gray);
 }
-*/
