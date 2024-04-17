@@ -63,17 +63,19 @@ table {
     --white: #fff;
     --body-font: "Montserrat", sans-serif;
     --h1-h2-h3: "Molle", cursive;
+    font-size: 16px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: pink;
 }
 
 /*---SKIP LINK---*/
-*{
-    box-sizing: border-box;
-    line-height: 1.35;
     
-}
-html {
-    background-color: var(--dk-gray);
-}
 #skip {
     position: absolute;
     left: -10000px;
@@ -94,37 +96,39 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(429px, 1fr));
-    width: 429px;
+    grid-template-columns: repeat(auto-fill, minmax(385 px, 1fr));
+    width: 385px;
     color: var(--dk-gray);
     background-color: var(--white);
     margin: 0 auto;
     font-family: var(--body-font);
-    font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.35;
     position: relative;
-    box-sizing: border-box;
 }
 /*---HEADING STYLES---*/
 
 h1, h2, h3 {
     font-family: var(--h1-h2-h3);
-    padding: 1rem 1.75rem 0 1.75rem;
+    padding: 0 1rem;
+    padding-top: 1rem;
 }
 h1 {
     font-size: 3.125rem;
 }
 h2 {
-    font-size: 2.75rem;
+    font-size: 2.50rem;
 }
 h3 {
     font-size: 2.25rem;
 }
 h4 {
     font-family: var(--body-font);
-    font-size: 1.625rem;
+    font-size: 1.35rem;
     font-weight: 600;
     text-transform: uppercase;
+}
+p {
+    padding: 0 1rem;
 }
 
 /*---HEADER STYLES---*/
@@ -136,16 +140,18 @@ header {
     grid-template-rows: repeat(3, auto);
     align-items: center;
     margin: 0 auto;
+    width: 385px;
 }
 #logo {
-    padding: 0.5rem;
+    width: 90%;
+    margin-top: 0.5rem;
 }
 header img {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 90%;
+    width: 100%;
 }
 header h1 {
     grid-row-start: 2;
@@ -159,7 +165,7 @@ header p {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 1.25rem;
-    padding: 0 1.75rem;
+    padding-bottom: 1.5rem;
 }
 
 /*---HIDDEN HEADING STYLES---*/
@@ -178,54 +184,21 @@ overflow: hidden;
 #toggle {
     display: none;
 }
-#menu-toggle {
-    display: flex;
-    top: -25rem;
-    left: 17rem;
-    z-index: 2;
-    background-color: var(--yellow);
-    text-transform: uppercase;
-    font-size: .75rem;
-    font-weight: 600;
-    margin: 0;
-    padding: .75rem 1rem;
-}
-#menu-toggle a {
-    display: block;
-    text-decoration: none;
-    color: var(--dk-gray);
-    text-align: center;
-    padding: 1.5rem 0;
-    background-color: var(--teal);
-    border: 1px solid #222;
-    text-transform: uppercase;
-    font-size: .75rem;
-    font-weight: 600;
-}
-#menu-toggle a:hover {
-    color: var(--white);
-}
-#menu-toggle input {
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: -7px;
-    left: -5px;  
-    padding: 0;
-    cursor: pointer;  
-    opacity: 0; 
-    z-index: 2; 
-    -webkit-touch-callout: none;
-  }
-
 #menu-toggle label {
     cursor: pointer;
     display: inline-block;
-    left: 30px;
-    top: -10px;
+    left: 40px;
+    top: 10px;
     position: relative;
     user-select: none;
+    background-color: var(--yellow);
+    padding: 0.85rem 4rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 600;
+}
+  input:checked ~ ul {
+    max-height: 500px;
 }
 nav ul {
     text-align: center;
@@ -234,30 +207,44 @@ nav ul {
     transition: max-height .2s ease-out;
     line-height: 3;
 }
+nav a {
+    display: inline-block;
+    width: 385px;
+    text-decoration: none;
+    color: var(--dk-gray);
+    background-color: var(--teal);
+    text-align: center;
+    padding: 1rem 0;
+    border: 1px solid #222;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 600;
+}*/
+#menu-toggle a:hover {
+    color: var(--white);
+}
+
 
 /*---INTRO STYLES---*/
+
 #img-grid {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 0.8rem;
-}
-#intro {
-    display: grid;
-    grid-template-columns: 1fr;
     gap: 0.5rem;
 }
-#intro h2 {
-    font-size: 2.5rem;
-}
-#intro p {
-    font-size: 1rem;
-    line-height: 1.875rem;
-    padding: 0.625rem 1.75rem;
-}
 #intro img {
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    min-width: 429px;
-    /*padding: .33rem;*/
+    margin-top: 0.5rem;
+}
+#intro picture img {
+    height: vh100;
+}
+
+#intro p {
+    line-height: 1.75rem;
+    padding-bottom: 0.75rem;
 }
 
 /*---PLAN STYLES---*/
@@ -265,19 +252,21 @@ nav ul {
 #plan {
     background-color: var(--yellow);
     margin-top: 1rem;
-    padding-bottom: 1rem;;
+    padding: 0 2rem 0.5rem 2rem;
 }
-
 #plan section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--teal);  
     border-radius: 0.75rem;
     border: solid #fff 4px;
-    margin: 0.5rem 1.75rem;
-    padding: 1.5rem;
-    justify-content: center;
+    margin: 0.75rem 0;
     height: 25vh;
+    padding-top: 1rem;
+}
+#plan img {
+    width: 90%;
 }
 
 /*---TESTIMONIAL STYLES---*/
@@ -290,13 +279,13 @@ q:before, q:after {
 content: '\201C';
 content: '\201D';
 }
-
 #testimonials div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
+    padding: 0 5rem;
 }
 #testimonials section {
     text-align: center;
@@ -311,14 +300,13 @@ q {
 
 #about {
     background-color: var(--blue);
-    margin-top: 1rem;
+    margin-top: 1rem
 }
 #about div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    padding-bottom: 20px;
 }
 #about img {
     height: 5rem;
@@ -360,10 +348,11 @@ input[type='radio'] {
     height: 1.25rem;
     width: 1.25rem;
     position: relative;
+    margin-top: 0.75rem;
 }
 input, fieldset, select {
     font-size: 1em;
-	border: 3px solid #9B26B0;
+	border: 2px solid #9B26B0;
     padding: 20px 5px;
     margin-bottom: 15px;
 }
@@ -375,7 +364,7 @@ fieldset{
 fieldset label {
     display: flex;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
 }
 legend {
 	font-weight: 600;
