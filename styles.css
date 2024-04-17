@@ -169,10 +169,9 @@ overflow: hidden;
     cursor: pointer;
     display: inline-block;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     right: 0;
     top: 40px;
-    user-select: none;
     background-color: var(--yellow);
     padding: 0.85rem 4rem;
     text-transform: uppercase;
@@ -190,7 +189,7 @@ nav ul {
     line-height: 3;
 }
 nav a {
-    display: inline-block;
+    display: block;
     width: 385px;
     text-decoration: none;
     color: var(--dk-gray);
@@ -205,7 +204,6 @@ nav a {
 #menu-toggle a:hover {
     color: var(--white);
 }
-
 
 /*---INTRO STYLES---*/
 
