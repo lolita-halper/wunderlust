@@ -132,38 +132,19 @@ p {
 }
 
 /*---HEADER STYLES---*/
-
 header {
     background-image: linear-gradient(to bottom, rgba(85,188,213,100),rgba(255,255,255,0));
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
     width: 385px;
 }
-#logo {
-    width: 90%;
-    margin-top: 0.5rem;
-}
 header img {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 100%;
-}
-header h1 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    width: 80%;
+    padding-top: 0.5rem;
 }
 header p {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
     font-size: 1.25rem;
     padding-bottom: 1.5rem;
 }
@@ -187,9 +168,10 @@ overflow: hidden;
 #menu-toggle label {
     cursor: pointer;
     display: inline-block;
-    left: 40px;
-    top: 10px;
-    position: relative;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 40px;
     user-select: none;
     background-color: var(--yellow);
     padding: 0.85rem 4rem;
@@ -219,7 +201,7 @@ nav a {
     text-transform: uppercase;
     font-size: .75rem;
     font-weight: 600;
-}*/
+}
 #menu-toggle a:hover {
     color: var(--white);
 }
