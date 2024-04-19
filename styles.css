@@ -174,7 +174,6 @@ z-index: 3;
 /* clear: both; */
 max-height: 0;
 transition: max-height 0.2s ease-out;
-
 position: absolute;
 top: 0;
 margin-top: 31px;
