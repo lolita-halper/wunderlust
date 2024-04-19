@@ -342,14 +342,33 @@ input[type='radio'] {
     font: inherit;
     color: #9B26B0;
     border: 0.15em solid #9B26B0;
-    
     border-radius: 50%;
-    
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+
 }
+.radio-control + .radio-control {
+    margin-top: 1em;
+  }
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: var(--white);
+  }
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+
+
 input[type='radio']:checked {
     background-color: var(--purple);
-    border: 0.75 solid var(--white);
-    
 }
 input, fieldset, select {
     font-size: 1em;
