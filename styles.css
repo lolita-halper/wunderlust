@@ -334,16 +334,22 @@ input, label, fieldset {
     display: block;
 }
 input[type='radio'] {
-    height: 1.15em;
-    width: 1.15em;
+    height: 1em;
+    width: 2.5em;
     /*position: relative;*/
-    /*margin-top: 0.75rem;*/
+    margin-top: 0.5rem;
     appearance: none;
     font: inherit;
     color: #9B26B0;
     border: 0.15em solid #9B26B0;
-    margin: 0;
+    
     border-radius: 50%;
+    
+}
+input[type='radio']:checked {
+    background-color: var(--purple);
+    border: 0.75 solid var(--white);
+    
 }
 input, fieldset, select {
     font-size: 1em;
