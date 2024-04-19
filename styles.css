@@ -171,10 +171,15 @@ list-style: none;
 overflow: hidden;
 background-color: var(--teal);
 z-index: 3;
-clear: both;
+/* clear: both; */
 max-height: 0;
 transition: max-height 0.2s ease-out;
 
+position: absolute;
+top: 0;
+margin-top: 31px;
+/* width: 100%; */
+width: 385px;
 }
 header ul a {
 display: block;
