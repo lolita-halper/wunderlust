@@ -135,8 +135,8 @@ p {
 /*---HEADER STYLES---*/
 header {
     background-image: linear-gradient(to bottom, rgba(85,188,213,100),rgba(255,255,255,100));
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
     align-items: center;
     width: 100%;
     margin: 0;
@@ -146,6 +146,9 @@ header img {
 }
 header p {
     font-size: 1.25rem;
+}
+header #logo {
+    float: left;
 }
 
 /*---HIDDEN HEADING STYLES---*/
@@ -190,8 +193,8 @@ position: relative;
 padding: 1rem 3rem;
 cursor: pointer;
 background-color:var(--yellow);
-left: 14rem;
-top: -14rem;
+top: -13rem;
+float: right;
 }
 header #toggle {
 display: none;
@@ -206,14 +209,8 @@ header #toggle:checked ~ label {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    z-index: 5;
+    z-index: 3;
 }
-
-
-
-
-
-
 
 
 /*---INTRO STYLES---*/
