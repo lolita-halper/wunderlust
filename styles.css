@@ -352,7 +352,7 @@ input[type='radio'] {
   }
   input[type="radio"]::before {
     content: "";
-    width: 0.1em;
+    width: 0.01em;
     height: 0.1em;
     border-radius: 50%;
     transform: scale(0);
@@ -367,16 +367,16 @@ input[type='radio']:checked {
     background-color: var(--purple);
 }
 input[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid #9B26B0;
-    outline-offset: max(6px, 0.15em);
+    outline: max(3px, 0.15em) solid #9B26B0;
+    outline-offset: max(3px, 0.15em);
   }
-
+/*----RADIO BUTTONS END----*/
 
 input, fieldset, select {
     font-size: 1em;
 	border: 2px solid #9B26B0;
-    padding: 20px 5px;
-    margin-bottom: 15px;
+    padding: 20px 15px;
+    margin-bottom: 10px;
 }
 fieldset{
     display: flex;
