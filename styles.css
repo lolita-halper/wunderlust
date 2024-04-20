@@ -94,7 +94,7 @@ html {
 /*---BODY STYLES---*/
 
 body {
-    width: 385px;
+    width: 390px;
     color: var(--dk-gray);
     background-color: var(--white);
     margin: 0 auto;
@@ -171,7 +171,7 @@ transition: max-height 0.2s ease-out;
 position: absolute;
 top: 0;
 margin-top: 31px;
-width: 385px;
+width: 390px;
 }
 header ul a {
 display: block;
