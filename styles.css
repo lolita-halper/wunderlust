@@ -803,7 +803,7 @@ legend {
     text-transform: uppercase;
     color: var(--white);
     margin-top:5px;
-    align-self: end;
+    justify-self:end;
 	width: 50%;
 }
 input, label, fieldset {
