@@ -60,8 +60,7 @@ table {
     --lt-gray: #eaeaea;
     --dk-gray: #222;
     --black:#000;
-    --white: #fff;
-    --gray-teal: #b3ced5;
+    --white: #fff;  
     --body-font: "Montserrat", sans-serif;
     --h1-h2-h3: "Molle", cursive;
     font-size: 16px;
@@ -70,9 +69,6 @@ table {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-html {
-    background-color: var(--gray-teal);
 }
 
 /*----------SKIP LINK----------*/
