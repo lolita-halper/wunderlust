@@ -70,6 +70,9 @@ table {
     margin: 0;
     padding: 0;
 }
+html{
+    background-color: var(--white);
+}
 
 /*----------SKIP LINK----------*/
     
